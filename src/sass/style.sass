@@ -233,7 +233,6 @@ nav
 			&:hover
 				&:before, &:after
 					background-color: $second-color
-					
 
 .car
 	min-height: 896px
@@ -281,5 +280,77 @@ nav
 		margin: 33px 0
 		&_nbm
 			margin-bottom: 0px
-			&_title
-				
+	&_title
+		font-weight: 400
+		font-size: 22px
+		color: #1CA8C3
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			color: #222222
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				height: 20px
+				width: 21px
+				background: url('../icons/check_blue.png') center center/cover no-repeat
+	&_descr
+		margin-top: 25px
+		font-weight: 300
+		font-size: 17px
+		color: #1CA8C3
+	.warning
+		.require_title
+			color: $second-color
+		.require_list
+			li
+				&:before
+					background: url('../icons/check_red.png') center center/cover no-repeat
+
+.world
+	min-height: 717px
+	padding: 46px 0
+	background: #080816 url('../img/bg/world_bg.jpg') center center/1440px 717px no-repeat
+	.wrld
+		height: 25px
+		width: 75px
+		background: #ffffff
+		font-weight: 400
+		font-size: 11px
+		text-transform: uppercase
+		color: #070716
+	&_all
+		font-weight: 700
+		font-size: 38px
+		margin: 0 auto
+		margin-top: 26px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+	&_descr
+		font-weight: 400
+		font-size: 17px
+		text-align: center
+		margin-top: 2px
+		color: #FFFFFF
+	&_city
+		display: block
+		height: 12px
+		width: 194px
+		margin: 0 auto
+		font-weight: 400
+		font-size: 15px
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+		margin-top: 486px
+		color: #1FBAD6
