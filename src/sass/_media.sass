@@ -46,9 +46,10 @@
 		&_descr
 			width: 296px
 			margin-top: 15px
-	.mobile
-		&_item
-				
+	.car
+		&_icon
+			img
+				width: 100%
 
 @media screen and ( max-width: 767px )
 	.menu
@@ -62,7 +63,7 @@
 		height: 100vh
 		padding: 20px 15px
 		background-color: rgba(0, 0, 0, .8)
-		transition: 0.6 all
+		transition: 0.6s all
 		&_active
 			left: 0
 		&_item
@@ -74,3 +75,76 @@
 	.world
 		&_city
 			width: 200px
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span
+			display: block
+			height: 3px
+			width: 100%
+			background-color: #ffffff
+			margin-bottom: 3px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -3px
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block
+	.subheader
+		&_tel
+			display: block
+			margin-top: 14px
+			color: #ffffff
+			font-size: 18px
+			font-weight: 400
+			text-transform: uppercase
+			text-align: center
+		&_btn
+			width: 180px
+			height: 35px
+			margin: 0 auto
+			display: block
+			margin-top: 12px
+	.promo
+		&_header
+			line-height: 45px
+	.reasons
+		&_descr
+			text-align: center
+		&_subtitle
+			font-size: 18px
+		&_text
+			margin-top: 5px
+	.require
+		&_title
+			text-align: center
+@media screen and ( max-width: 575px )
+	.subheader
+		height: 60px
+		&_text
+			display: none
+		&_logo
+			margin-top: 18px
+		&_tel
+			font-size: 12px
+			font-weight: 400
+			text-transform: uppercase
+			margin-top: 9px
+		&_btn
+			width: 110px
+			height: 20px
+			font-size: 10px
+			margin-top: 7px
