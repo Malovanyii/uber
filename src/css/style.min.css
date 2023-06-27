@@ -540,6 +540,7 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     top: 0;
     left: -100%;
     width: 50%;
@@ -635,7 +636,14 @@ nav {
   }
 }
 @media screen and (max-width: 575px) {
+  nav {
+    height: 30px;
+  }
+  header {
+    height: 30px;
+  }
   .subheader {
+    top: 30px;
     height: 60px;
   }
   .subheader_text {
@@ -655,5 +663,102 @@ nav {
     height: 20px;
     font-size: 10px;
     margin-top: 7px;
+  }
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+  }
+  .promo_text {
+    display: none;
+  }
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 13px;
+    line-height: 30px;
+  }
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    font-size: 16px;
+  }
+  .menu {
+    width: 85%;
+    text-align: center;
+  }
+  .menu_item {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
+  }
+  .reasons {
+    padding: 35px 0 30px 0;
+  }
+  .reasons h2 {
+    font-size: 16px;
+  }
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .mobile {
+    padding: 25px 0 20px 0;
+  }
+  .mobile .title {
+    font-size: 20px;
+  }
+  .mobile .subtitle {
+    font-size: 15px;
+  }
+  .car {
+    min-height: 350px;
+    padding: 50px 0 50px 0;
+  }
+  .car_title {
+    font-size: 20px;
+  }
+  .car_subtitle {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .car_descr {
+    font-size: 14px;
+  }
+  .require {
+    padding: 30px 0 30px 0;
+  }
+  .require h2 {
+    font-size: 22px;
+  }
+  .require_title {
+    font-size: 18px;
+  }
+  .require_list li {
+    font-size: 15px;
+  }
+  .require_descr {
+    font-size: 15px;
+  }
+  .world {
+    min-height: 400px;
+  }
+  .world_all {
+    font-size: 30px;
+  }
+  .world_descr {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .world_city {
+    margin-top: 200px;
   }
 }/*# sourceMappingURL=style.min.css.map */
